@@ -82,21 +82,21 @@ $(document).ready(function() {
 				"enable": true,
 				"distance": 300,
 				"color": "#ffffff",
-				"opacity": 0.4,
+				"opacity": 0.3,
 				"width": 2
 			},
 			"move": {
 				"enable": true,
-				"speed": 5,
+				"speed": 2,
 				"direction": "none",
 				"random": false,
 				"straight": false,
 				"out_mode": "bounce",
-				"bounce": true,
+				"bounce": false,
 				"attract": {
 					"enable": false,
-					"rotateX": 600,
-					"rotateY": 1200
+					"rotateX": 5000,
+					"rotateY": 5000
 				}
 			}
 		},
@@ -111,7 +111,7 @@ $(document).ready(function() {
 					"enable": false,
 					"mode": "push"
 				},
-				"resize": false
+				"resize": true
 			},
 			"modes": {
 				"grab": {
