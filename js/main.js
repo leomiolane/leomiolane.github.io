@@ -142,10 +142,8 @@ $(document).ready(function() {
 		"retina_detect": true
 	};
 	var jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(partJson));
-	//particlesJS.load('particles', jsonUri, afterParticlesLoaded);
 	particlesJS.load('particles-js', jsonUri, function() {
 		console.log('callback - particles.js config loaded');
 	});
 	console.log("js-loaded");
 });
-
