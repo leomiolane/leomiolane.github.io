@@ -34,9 +34,9 @@ $(document).ready(function() {
 	var partJson = {
 		"particles": {
 			"number": {
-				"value": 100,
+				"value": 70,
 				"density": {
-					"enable": true,
+					"enable": false,
 					"value_area": 800
 				}
 			},
@@ -59,7 +59,7 @@ $(document).ready(function() {
 				}
 			},
 			"opacity": {
-				"value": 0.4,
+				"value": 0.5,
 				"random": false,
 				"anim": {
 					"enable": false,
