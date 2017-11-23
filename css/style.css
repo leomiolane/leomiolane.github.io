@@ -33,7 +33,11 @@ body{
 	padding-top: 1.5rem
 }
 #research-content,#home-content,#teaching-content,#links-content{
-	height: 73%;
+	position: absolute;
+	top: 15rem;
+	bottom: 0;
+	left:0;
+	right:0;
 	overflow-y: auto
 }
 .hero-foot{
@@ -44,7 +48,7 @@ body{
 }
 .bandeau{
 	position: relative;
-	height: 27%
+	height: 15rem
 }
 .divpos{
 	position: relative;
