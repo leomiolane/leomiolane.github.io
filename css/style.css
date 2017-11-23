@@ -15,14 +15,13 @@ a{
 	padding: 0
 }
 html{
-	height: 100%;
 	overflow: hidden
-}
-body{
-	height: 100%
 }
 .section{
 	padding: 1.5rem 1.5rem
+}
+.hero-body{
+	padding: 2rem 1.5rem;
 }
 #contact{
 	position: absolute;
@@ -32,9 +31,15 @@ body{
 	height:15rem;
 	padding-top: 1.5rem
 }
+.divpos{
+	height: 100%
+}
+.bandeau{
+	height: 14rem
+}
 #research-content,#home-content,#teaching-content,#links-content{
 	position: absolute;
-	top: 15rem;
+	top: 14rem;
 	bottom: 0;
 	left:0;
 	right:0;
@@ -45,12 +50,4 @@ body{
 	bottom: 0;
 	left: 0;
 	right: 0;
-}
-.bandeau{
-	position: relative;
-	height: 15rem
-}
-.divpos{
-	position: relative;
-	height: 100%;
 }
