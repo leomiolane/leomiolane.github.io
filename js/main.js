@@ -80,14 +80,14 @@ $(document).ready(function() {
 			},
 			"line_linked": {
 				"enable": true,
-				"distance": 300,
+				"distance": 200,
 				"color": "#ffffff",
-				"opacity": 0.3,
+				"opacity": 0.4,
 				"width": 2
 			},
 			"move": {
 				"enable": true,
-				"speed": 2,
+				"speed": 1.0,
 				"direction": "none",
 				"random": false,
 				"straight": false,
