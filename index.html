@@ -19,44 +19,47 @@
 				<div class="hero-body">
 					<div class="container">
 						<div class="columns is-vcentered">
+							<div class="column is-narrow is-hidden-mobile leo-photo">
+								<div class="box" style='background: url("images/leom.jpg"); background-size: 100% 100%; width:7rem; height: 7rem;'>
+								</div>
+							</div>
 							<div class="column">
 								<p class="title is-1"> Léo Miolane </p>
 								<p class="subtitle is-4"> Welcome to my personal webpage !  </p>
 							</div>
-							<div class="column is-narrow is-hidden-mobile leo-photo">
-								<div class="box" style='background: url("images/leom.jpg"); background-size: 100% 100%; width:11rem; height: 11rem;'>
-								</div>
-							</div>
 						</div>
-					</div>
-				</div>
-				<div class="hero-foot">
-					<div class="container">
-						<nav id="navbar" class="tabs is-boxed">
-							<ul>
-								<li id="home" >
-									<a href="#home">Home</a>
-								</li>
-								<li id="research" >
-									<a href="#research">Research</a>
-								</li>
-								<li id="teaching" >
-									<a href="#teaching">Teaching</a>
-								</li>
-								<li id="links" >
-									<a href="#links">Links</a>
-								</li>
-							</ul>
-						</nav>
 					</div>
 				</div>
 			</div>
 		</section>
+		<div class="container">
+			<nav id="navbar" class="navbar" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+					<!--<span class="navbar-item has-text-primary is-size-5 is-hidden-desktop">-->
+						<!--Léo Miolane-->
+					<!--</span>-->
+					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+
+				<div id="navbarBasicExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a id="home" href="#home" class="navbar-item navbar-clicker"> Home </a>
+						<a id="research" href="#research" class="navbar-item navbar-clicker"> Research </a>
+						<a id="teaching" href="#teaching" class="navbar-item navbar-clicker"> Teaching </a>
+						<a id="links" href="#links" class="navbar-item navbar-clicker"> Links </a>
+					</div>
+				</div>
+			</nav>
+		</div>
 
 		<!--[>HOME<]-->
 		<section class="section" id="home-content" style='display: none;'>
 			<div class="container">
-				<div class="columns">
+				<div class="columns is-mobile">
 					<div class="column ">
 						<h2 class="subtitle is-3">About me</h2>
 						I am a PhD student at Inria-ENS in Paris under supervision of <a href="http://www.di.ens.fr/~lelarge/">Marc Lelarge</a>.
@@ -75,14 +78,14 @@
 				<div class="container">
 					<div class="content">
 						<p class="title">
-							<strong>Contact</strong> 
+						<strong>Contact</strong> 
 						</p>
 						<p>
-							<img src="images/leomi.png" alt="Image" style="width:190px"><br>
-							Inria - Centre de recherche de Paris<br>
-							Bureau C321<br>
-							2 rue Simone Iff<br>
-							75012 PARIS
+						<img src="images/leomi.png" alt="Image" style="width:190px"><br>
+						Inria - Centre de recherche de Paris<br>
+						Bureau C321<br>
+						2 rue Simone Iff<br>
+						75012 PARIS
 						</p>
 					</div>
 				</div>
@@ -91,179 +94,179 @@
 
 
 		<!--[>RESEARCH<]-->
-		<section class="section" id="research-content" style='display: none;'>
-			<div class="container">
-				<h2 class="subtitle is-3">Working papers</h1>
+			<section id="research-content" class="section" style='display: none;'>
+				<div class="container">
+					<h2 class="subtitle is-3">Working papers</h1>
 
-				<div class="box">
-					<article class="media">
-						<div class="media-content">
-							<div class="content">
-								<p>
+					<div class="box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
 									<strong>Statistical thresholds for tensor PCA</strong>
 									<br>
 									Aukosh Jagannath, Patrick Lopatto and Léo Miolane, 2018
-								</p>
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="media-right">
-							<a target="_blank" href="https://arxiv.org/pdf/1812.03403.pdf">arxiv</a>
-						</div>
-					</article>
-				</div>
+							<div class="media-right">
+								<a target="_blank" href="https://arxiv.org/pdf/1812.03403.pdf">arxiv</a>
+							</div>
+						</article>
+					</div>
 
-				<div class="box">
-					<article class="media">
-						<div class="media-content">
-							<div class="content">
-								<p>
+					<div class="box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
 									<strong>The distribution of the Lasso: Uniform control over sparse balls and adaptive parameter tuning</strong>
 									<br>
 									Léo Miolane and Andrea Montanari, 2018
-								</p>
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="media-right">
-							<a target="_blank" href="https://arxiv.org/pdf/1811.01212.pdf">arxiv</a>
-						</div>
-					</article>
-				</div>
+							<div class="media-right">
+								<a target="_blank" href="https://arxiv.org/pdf/1811.01212.pdf">arxiv</a>
+							</div>
+						</article>
+					</div>
 
-				<div class="box">
-					<article class="media">
-						<div class="media-content">
-							<div class="content">
-								<p>
+					<div class="box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
 									<strong>Phase transitions in spiked matrix estimation: information-theoretic analysis</strong>
 									<br>
 									Léo Miolane, 2018
-								</p>
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="media-right">
-							<a target="_blank" href="https://arxiv.org/pdf/1806.04343.pdf">arxiv</a>
-						</div>
-					</article>
-				</div>
+							<div class="media-right">
+								<a target="_blank" href="https://arxiv.org/pdf/1806.04343.pdf">arxiv</a>
+							</div>
+						</article>
+					</div>
 
-				<div class="box">
-					<article class="media">
-						<div class="media-content">
-							<div class="content">
-								<p>
+					<div class="box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
 									<strong>Phase transitions, optimal errors and optimality of message-passing in generalized linear models</strong>
 									<br>
 									Jean Barbier, Florent Krzakala, Nicolas Macris, Léo Miolane & Lenka Zdeborová, 2017
-								</p>
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="media-right">
-							<a target="_blank" href="https://arxiv.org/pdf/1708.03395.pdf">arxiv</a>
-						</div>
-					</article>
-				</div>
+							<div class="media-right">
+								<a target="_blank" href="https://arxiv.org/pdf/1708.03395.pdf">arxiv</a>
+							</div>
+						</article>
+					</div>
 
-				<div class="box">
-					<article class="media">
-						<div class="media-content">
-							<div class="content">
-								<p>
+					<div class="box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
 									<strong>The Layered Structure of Tensor Estimation and its Mutual Information</strong>
 									<br>
 									Jean Barbier, Nicolas Macris & Léo Miolane, 2017
-								</p>
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="media-right">
-							<a target="_blank" href="https://arxiv.org/pdf/1709.10368.pdf">arxiv</a>
-						</div>
-					</article>
-				</div>
+							<div class="media-right">
+								<a target="_blank" href="https://arxiv.org/pdf/1709.10368.pdf">arxiv</a>
+							</div>
+						</article>
+					</div>
 
-				<div class="box">
-					<article class="media">
-						<div class="media-content">
-							<div class="content">
-								<p>
+					<div class="box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
 									<strong>Statistical and computational phase transitions in spiked tensor estimation</strong>
 									<br>
 									Thibault Lesieur, Léo Miolane, Marc Lelarge, Florent Krzakala & Lenka Zdeborová, 2017
-								</p>
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="media-right">
-							<a target="_blank" href="https://arxiv.org/pdf/1701.08010.pdf">arxiv</a>
-						</div>
-					</article>
-				</div>
+							<div class="media-right">
+								<a target="_blank" href="https://arxiv.org/pdf/1701.08010.pdf">arxiv</a>
+							</div>
+						</article>
+					</div>
 
-				<div class="box">
-					<article class="media">
-						<div class="media-content">
-							<div class="content">
-								<p>
+					<div class="box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
 									<strong>Fundamental limits of low-rank matrix estimation: the non-symmetric case</strong>
 									<br>
 									Léo Miolane, 2017
-								</p>
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="media-right">
-							<a target="_blank" href="https://arxiv.org/pdf/1702.00473.pdf">arxiv</a>
-						</div>
-					</article>
-				</div>
+							<div class="media-right">
+								<a target="_blank" href="https://arxiv.org/pdf/1702.00473.pdf">arxiv</a>
+							</div>
+						</article>
+					</div>
 
-				<div class="box">
-					<article class="media">
-						<div class="media-content">
-							<div class="content">
-								<p>
+					<div class="box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
 									<strong>Fundamental limits of symmetric low-rank matrix estimation</strong>
 									<br>
 									Marc Lelarge & Léo Miolane, 2016
-								</p>
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="media-right">
-							<a target="_blank" href="https://arxiv.org/pdf/1611.03888.pdf">arxiv</a>
-						</div>
-					</article>
-				</div>
-				<div class="box">
-					<article class="media">
-						<div class="media-content">
-							<div class="content">
-								<p>
+							<div class="media-right">
+								<a target="_blank" href="https://arxiv.org/pdf/1611.03888.pdf">arxiv</a>
+							</div>
+						</article>
+					</div>
+					<div class="box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p>
 									<strong>Recovering asymmetric communities in the stochastic block model</strong>
 									<br>
 									Francesco Caltagirone, Marc Lelarge & Léo Miolane, 2016
-								</p>
+									</p>
+								</div>
 							</div>
-						</div>
-						<div class="media-right">
-							<a target="_blank" href="https://arxiv.org/pdf/1610.03680.pdf">arxiv</a>
-						</div>
-					</article>
-				</div>
+							<div class="media-right">
+								<a target="_blank" href="https://arxiv.org/pdf/1610.03680.pdf">arxiv</a>
+							</div>
+						</article>
+					</div>
 
 
-				<h2 class="subtitle is-3">Slides</h1>
-				<div class="content">
-					<ul>
-						<li>
-							<a target="_blank" href="data/research/GLM.pdf">Phase transitions in Generalized Linear Models</a>. 'Statistical physics and machine learning back together' - Cargèse, August 2018.
-						</li>
-						<li>
-							<a target="_blank" href="data/research/presentation_eindhoven.pdf">Community detection in the asymmetric stochastic block model</a>. Young European Probabilists Workshop - Eindhoven, September 2017.
-						</li>
-						<li>
-							<a target="_blank" href="data/research/presentation_houches.pdf">Cavity method for low-rank matrix factorization</a>. Workshop on Statistical physics, Learning, Inference and Networks - les Houches, March 2017.
-						</li>
-					</ul>
+					<h2 class="subtitle is-3">Slides</h1>
+					<div class="content">
+						<ul>
+							<li>
+								<a target="_blank" href="data/research/GLM.pdf">Phase transitions in Generalized Linear Models</a>. 'Statistical physics and machine learning back together' - Cargèse, August 2018.
+							</li>
+							<li>
+								<a target="_blank" href="data/research/presentation_eindhoven.pdf">Community detection in the asymmetric stochastic block model</a>. Young European Probabilists Workshop - Eindhoven, September 2017.
+							</li>
+							<li>
+								<a target="_blank" href="data/research/presentation_houches.pdf">Cavity method for low-rank matrix factorization</a>. Workshop on Statistical physics, Learning, Inference and Networks - les Houches, March 2017.
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
 		<section class="section" id="teaching-content" style='display: none;'> 
 			<div class="container">

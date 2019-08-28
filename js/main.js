@@ -4,23 +4,25 @@ $(document).ready(function() {
 	var $currentTab=$('#home');
 	var $currentContent=$('#home-content');
 
-	$currentTab.addClass('is-active');
+	//$currentTab.addClass('is-selected');
 	$currentContent.show();
 
 	$navbar.on('click', function(e) {
 		e.preventDefault();
 		var targetId = $(e.currentTarget).attr('href');
-		var $target = $(targetId);
-		var $targetContent = $(targetId + '-content');
+		if (['#home','#research','#teaching','#links'].includes(targetId)){
+			var $target = $(targetId);
+			var $targetContent = $(targetId + '-content');
 
-		$currentTab.removeClass('is-active');
-		$currentContent.hide();
+			//$currentTab.removeClass('is-selected');
+			$currentContent.hide();
 
-		$currentTab=$target;
-		$currentContent=$targetContent;
+			$currentTab=$target;
+			$currentContent=$targetContent;
 
-		$currentTab.addClass('is-active');
-		$currentContent.show();
+			//$currentTab.addClass('is-selected');
+			$currentContent.show();
+		}
 	});
 	//var windowHeight = window.innerHeight;
 	//var clientHeight = document.getElementById('particles-js').clientHeight;
@@ -146,4 +148,35 @@ $(document).ready(function() {
 		console.log('callback - particles.js config loaded');
 	});
 	console.log("js-loaded");
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+
+	// Get all "navbar-burger" elements
+	const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+	const $navbarClickers = Array.prototype.slice.call(document.querySelectorAll('.navbar-clicker'), 0);
+
+
+	// Add a click event on each of them
+	$navbarBurgers.forEach( el => {
+		// Get the target from the "data-target" attribute
+		const target = el.dataset.target;
+		const $target = document.getElementById(target);
+		el.addEventListener('click', () => {
+			// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+			el.classList.toggle('is-active');
+			$target.classList.toggle('is-active');
+			console.log('clickii')
+
+		});
+		$navbarClickers.forEach( cli => {
+			cli.addEventListener('click', () => {
+				// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+				el.classList.remove('is-active');
+				$target.classList.remove('is-active');
+
+			});
+		});
+	});
+
 });
