@@ -4,7 +4,6 @@ $(document).ready(function() {
 	var $currentTab=$('#home');
 	var $currentContent=$('#home-content');
 
-	//$currentTab.addClass('is-selected');
 	$currentContent.show();
 
 	$navbar.on('click', function(e) {
@@ -14,32 +13,22 @@ $(document).ready(function() {
 			var $target = $(targetId);
 			var $targetContent = $(targetId + '-content');
 
-			//$currentTab.removeClass('is-selected');
 			$currentContent.hide();
 
 			$currentTab=$target;
 			$currentContent=$targetContent;
 
-			//$currentTab.addClass('is-selected');
 			$currentContent.show();
 		}
 	});
-	//var windowHeight = window.innerHeight;
-	//var clientHeight = document.getElementById('particles-js').clientHeight;
-	//var sectionHeight = (windowHeight - clientHeight).toString().concat("px")
-	//document.getElementById("research-content").style.height = sectionHeight;
-	//document.getElementById("links-content").style.height = sectionHeight;
-	//document.getElementById("teaching-content").style.height = sectionHeight;
-	//document.getElementById("home-content").style.height = sectionHeight;
-	//console.log(sectionHeight)
 
 	var partJson = {
 		"particles": {
 			"number": {
 				"value": 70,
 				"density": {
-					"enable": false,
-					"value_area": 800
+					"enable": true,
+					"value_area": 200
 				}
 			},
 			"color": {
@@ -150,12 +139,11 @@ $(document).ready(function() {
 	console.log("js-loaded");
 });
 
+// NAVBAR MENU
 document.addEventListener('DOMContentLoaded', () => {
-
 	// Get all "navbar-burger" elements
 	const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 	const $navbarClickers = Array.prototype.slice.call(document.querySelectorAll('.navbar-clicker'), 0);
-
 
 	// Add a click event on each of them
 	$navbarBurgers.forEach( el => {

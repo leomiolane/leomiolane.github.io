@@ -15,17 +15,16 @@
 
 	<body>
 
-		<section class="hero is-primary bandeau">
-			<div  class="divpos" id="particles-js">
+		<section id="bandeau" class="hero is-primary">
+			<div  id="particles-js">
 				<div class="hero-body">
 					<div class="container">
 						<div class="columns is-vcentered">
 							<div class="column is-narrow is-hidden-mobile leo-photo">
-								<div class="box" style='background: url("images/leom.jpg"); background-size: 100% 100%; width:7rem; height: 7rem;'>
-								</div>
+								<div id="photo_leo" class="box"></div>
 							</div>
 							<div class="column">
-								<p class="title is-1"> Léo Miolane </p>
+								<p class="title is-2"> Léo Miolane </p>
 								<p class="subtitle is-4"> Personal webpage  </p>
 							</div>
 						</div>
@@ -36,17 +35,14 @@
 		<div class="container">
 			<nav id="navbar" class="navbar" role="navigation" aria-label="main navigation">
 				<div class="navbar-brand">
-					<!--<span class="navbar-item has-text-primary is-size-5 is-hidden-desktop">-->
-					<!--Léo Miolane-->
-					<!--</span>-->
-					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="leoNav">
 						<span aria-hidden="true"></span>
 						<span aria-hidden="true"></span>
 						<span aria-hidden="true"></span>
 					</a>
 				</div>
 
-				<div id="navbarBasicExample" class="navbar-menu">
+				<div id="leoNav" class="navbar-menu">
 					<div class="navbar-start">
 						<a id="home" href="#home" class="navbar-item navbar-clicker"> Home </a>
 						<a id="research" href="#research" class="navbar-item navbar-clicker"> Research </a>
@@ -62,7 +58,7 @@
 			<div class="container">
 				<div class="columns is-mobile">
 					<div class="column ">
-						<h2 class="subtitle is-3">About me</h2>
+						<h2 class="subtitle is-3 is-size-4-mobile">About me</h2>
 						I am a PhD student at Inria-ENS in Paris under supervision of <a href="http://www.di.ens.fr/~lelarge/">Marc Lelarge</a>.
 						I am working on community detection on random graphs and related topics.
 						I am also teaching assistant at University Paris 6.
@@ -93,7 +89,7 @@
 		<!--[>RESEARCH<]-->
 		<section id="research-content" class="section" style='display: none;'>
 			<div class="container">
-				<h2 class="subtitle is-3">Working papers</h1>
+				<h2 class="subtitle is-3 is-size-4-mobile">Working papers</h1>
 
 				<div class="box">
 					<article class="media">
@@ -248,7 +244,7 @@
 				</div>
 
 
-				<h2 class="subtitle is-3">Slides</h1>
+				<h2 class="subtitle is-3 is-size-4-mobile">Slides</h1>
 				<div class="content">
 					<ul>
 						<li>
@@ -267,12 +263,12 @@
 
 		<section class="section" id="teaching-content" style='display: none;'> 
 			<div class="container">
-				<h2 class="subtitle is-3">NYU Fall 2019: DS-GA 1014 Linear Algebra for data science</h2>
+				<h2 class="subtitle is-3 is-size-4-mobile">NYU Fall 2019: DS-GA 1014 Linear Algebra for data science</h2>
 				See the <a href="linalg-for-ds.html">course page</a>.
 				<br>
 				<br>
 
-				<h2 class="subtitle is-3">UPMC, 2017 & 2018. 3M263: Intégration.</h2>
+				<h2 class="subtitle is-3 is-size-4-mobile">UPMC, 2017 & 2018. 3M263: Intégration.</h2>
 				<div class="content">
 					<ul>
 						<li> <a target="_blank" href="data/teaching/3M263/cc1.pdf">Contrôle continu 1</a> et son <a target="_blank" href="data/teaching/3M263/correction_CC1.pdf">corrigé</a></li>
@@ -281,7 +277,7 @@
 						<li> <a target="_blank" href="data/teaching/3M263/convolution.pdf">Un petit exercice</a> sur le produit de convolution</li>
 					</ul>
 				</div>
-				<h2 class="subtitle is-3">UPMC, 2016. 2M261: Suites et séries de fonctions, intégrales à paramètre.</h2>
+				<h2 class="subtitle is-3 is-size-4-mobile">UPMC, 2016. 2M261: Suites et séries de fonctions, intégrales à paramètre.</h2>
 				<div class="content">
 					<ul>
 						<li> <a target="_blank" href="data/teaching/2M261/dm1.pdf">Devoir à la maison 1</a> </li>
@@ -297,7 +293,7 @@
 
 		<section class="section" id="links-content" style='display: none;'>
 			<div class="container">
-				<h2 class="subtitle is-3">Some links:</h2>
+				<h2 class="subtitle is-3 is-size-4-mobile">Some links:</h2>
 				<div class="content">
 					<ul>
 						<li> <a href="https://github.com/homerours">My GitHub profile</a> </li>
